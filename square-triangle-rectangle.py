@@ -22,4 +22,5 @@ elif a == 3:
     print("The area of the rectangle with the length " + str(l) + " units and \nbreadth " + str(b) + " units is " + str(
     a3) + " Units^2")
 else:
-    print("Invalid input")
+    print("Invalid input!")
+
