@@ -1,10 +1,4 @@
-
-
-
-
-
-
-
+#add or change letters in list it make the code print what you like
 
 
 list=[]
