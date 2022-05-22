@@ -1,0 +1,55 @@
+from cgi import print_directory
+import random
+# computer1_action = input("ente a choice (rock, paper, scissors): ")
+possible_actions = ["rock", "paper", "scissors"]
+numberofruns = int(input("How many times do you what it to run!"))
+shouldPrintDetails = input("Do you want details? (0 (No) 1 (Yes)")
+
+computer1_wins=0
+computer2_wins=0
+computer_ties=0
+
+def printDetails(shouldPrintDetails1,printInfo):
+    if shouldPrintDetails1 == "1":
+        print(printInfo)
+        
+
+for x in range(0,numberofruns):
+    print()
+    print(f"MATCH Number {x}") 
+    computer1_action = random.choice(possible_actions)
+    computer2_action = random.choice(possible_actions)
+    printDetails(shouldPrintDetails,f"\tComputer 1 Chose {computer1_action}.")
+    printDetails(shouldPrintDetails,(f"\tComputer 2 Chose {computer2_action}.")) 
+    if computer1_action == computer2_action:
+        printDetails(shouldPrintDetails,(f"\t\tBoth players selected {computer1_action}. It's a tie!"))
+        computer_ties+=1
+    elif computer1_action == "rock":
+        if computer2_action == "scissors":
+            printDetails(shouldPrintDetails,("\t\tRock smashes scissors! Computer 1 wins!"))
+            computer1_wins+=1
+        else:
+            printDetails(shouldPrintDetails,("\t\tPaper covers rock! Computer 2 wins."))
+            computer2_wins+=1
+    elif computer1_action == "paper":
+        if computer2_action == "rock":
+            printDetails(shouldPrintDetails,("\t\tPaper covers rock! Computer 1 wins!"))
+            computer1_wins+=1
+        else:
+            printDetails(shouldPrintDetails,("\t\tScissors cuts paper! Computer 2 wins!"))
+            computer2_wins+=1
+    elif computer1_action == "scissors":
+        if computer2_action == "paper":
+            printDetails(shouldPrintDetails,("\t\tScissors cuts paper! Computer 1 Wins!"))
+            computer1_wins+=1
+        else:
+            printDetails(shouldPrintDetails,("\t\tRock smashes scissors! Computer 2 Wins!"))
+            computer2_wins+=1
+            
+            
+print()          
+print(f"Computer 1 won {str(computer1_wins)} times out of {str(numberofruns)}")
+print(f"Computer 2 won {str(computer2_wins)} times out of {str(numberofruns)}")
+print(f"The computers tied {str(computer_ties)}  times out of {str(numberofruns)}")
+print()
+    
