@@ -1,3 +1,6 @@
+# @Copyright Shiren Thapa
+# MIT General Purpose Licensing
+
 from cgi import print_directory
 import random
 # computer1_action = input("ente a choice (rock, paper, scissors): ")
