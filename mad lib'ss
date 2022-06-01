@@ -1,15 +1,40 @@
-who = input("Enter a person's name in the room: ")
-look=input(f"discrbe {who}: ")
-food=input(f"name a food {who} likes:")
-sport=input(f"what is {who}'s favorite sport:")
-gender=input(f"what is {who}'s gender?(boy,girl,them/they):")
+import time
+adjective1=input("give me an adjective:")
+time.sleep(1)
+adjective2=input("one more adjective please:")
+time.sleep(1)
+bird=input("name a type of bird:")
+time.sleep(1)
+room=input("name a room in a house:")
+time.sleep(1)
+verbpasttense=input("i need a verb that is past tense:")
+time.sleep(1)
+verb=input("now i need a verb:")
+time.sleep(1)
+rname=input("give me one of your relatives names:")
+time.sleep(1)
+noun=input("i need a noun now:")
+time.sleep(1)
+liquid=input("now im going to need a liquid:")
+time.sleep(1)
+ingverb=input("i need a verb ending in -ing:")
+time.sleep(1)
+body=input("name a part of the body also it must be plural:")
+time.sleep(1)
+pnoun=input("plural noun please:")
+time.sleep(1)
+ingverb2=input("i need a verb ending in -ing:")
+time.sleep(1)
+noun2=input("give me a noun and we are done:")
 
 
-
-
-
-
-
-
-
-print(f"the best way to describe {who} is {look} also {who} loves {food}  also {who} is a {gender} and {who}'s favorite sport is {sport}")
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print()
+print(f"it was a {adjective1}, cold november day. I woke up to the {adjective2} smell of {bird} roasting in the {room} downstairs.  I {verbpasttense} down the stairs to see if i could help {verb} the dinner. My mom said, see if {rname} needs a fresh {noun}. so i carried a tray of glasses full of {liquid} into the {ingverb} room. when i got there, i couldn't believe my {body}! There were {pnoun} {ingverb2} on the {noun2}!!!!!!!!!!!!!!!!")
