@@ -1,0 +1,15 @@
+who = input("Enter a person's name in the room: ")
+look=input(f"discrbe {who}: ")
+food=input(f"name a food {who} likes:")
+sport=input(f"what is {who}'s favorite sport:")
+gender=input(f"what is {who}'s gender?(boy,girl,them/they):")
+
+
+
+
+
+
+
+
+
+print(f"the best way to describe {who} is {look} also {who} loves {food}  also {who} is a {gender} and {who}'s favorite sport is {sport}")
