@@ -34,4 +34,10 @@ else:
     print ("you need to put in ether for, while, or forever please restart and try again")
     
     
+
+
+
+
+    
+    
     
